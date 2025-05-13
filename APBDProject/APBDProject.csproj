@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <!-- .NET 8 LTS runtime -->
+        <TargetFramework>net8.0</TargetFramework>
+        <!-- “nullable reference types” warnings turned on -->
+        <Nullable>enable</Nullable>
+        <!-- Implicit global usings so you write fewer using‑lines -->
+        <ImplicitUsings>enable</ImplicitUsings>
+        <!-- Create XML‑doc file (nice for IntelliSense) -->
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+    <ItemGroup>
+        <!-- Entity Framework Core provider for SQL Server -->
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0" />
+        <!-- Design‑time bits so ‘dotnet ef migrations …’ works -->
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design"
+                          Version="8.0.0"
+                          PrivateAssets="all" />
+        <!-- AutoMapper + DI helper -->
+        <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+        <!-- Swagger/OpenAPI generator -->
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+        <!-- For the AddNewtonsoftJson() extension used in Program.cs -->
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.0" />
+    </ItemGroup>
+
+</Project>
