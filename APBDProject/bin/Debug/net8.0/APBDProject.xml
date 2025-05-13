@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>APBDProject</name>
+    </assembly>
+    <members>
+        <member name="M:APBDProject.API.Controllers.ProjectsController.DeleteProject(System.Int32,System.Threading.CancellationToken)">
+            <summary>Deletes a project plus all its tasks in one DB transaction.</summary>
+        </member>
+        <member name="M:APBDProject.API.Services.Interfaces.IProjectService.DeleteProjectAsync(System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Deletes a project together with all its tasks in one transaction.
+            Returns <c>true</c> when the project was found and deleted, <c>false</c> otherwise.
+            </summary>
+        </member>
+        <member name="M:APBDProject.API.Services.Interfaces.ITeamService.GetMemberAsync(System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Returns a single team‑member (plus his/her tasks) or <c>null</c> when the id is unknown.
+            </summary>
+        </member>
+    </members>
+</doc>
